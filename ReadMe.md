@@ -1,2 +1,2 @@
 # Intro
-This is an AHk framework.
+This is an AHK framework built to communicate between your Windows PC and other remote devices using SyncThing.
