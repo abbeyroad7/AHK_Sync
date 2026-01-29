@@ -9,6 +9,15 @@ Import:
 SetTitleMatchMode, RegEx
 }
 
+IconChange:
+{
+	I_Icon = .Icon.png
+	ICON [I_Icon]                        ;Changes a compiled script's icon (.exe)
+	if I_Icon <>
+	IfExist, %I_Icon%
+		Menu, Tray, Icon, %I_Icon%   ;Changes menu tray icon 
+}
+
 ;Designate your monitored cluster file here.
 Path:="E:\Programs\.SystemLinks\Sync\MyCluster"
 MyCluster:="Commands.ini"
